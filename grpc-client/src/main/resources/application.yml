@@ -1,11 +1,11 @@
 server:
-  port: 9090
+  port: 9696
 spring:
   application:
     name: local-grpc-client
 grpc:
   client:
-    local-grpc-server:
+    local-grpc-server111:
       host:
       - ${LOCAL-GRPC-HOST:127.0.0.1}
       port:

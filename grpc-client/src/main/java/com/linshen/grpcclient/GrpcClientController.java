@@ -14,7 +14,7 @@ public class GrpcClientController {
     private GrpcClientService grpcClientService;
 
     @RequestMapping("/")
-    public String printMessage(@RequestParam(defaultValue = "Michael") String name) {
-        return grpcClientService.sendMessage(name);
+    public String printMessage(@RequestParam(defaultValue = "/Users/lh/Downloads/2fec491f61292e6ea8a60efcd75a87d7.jpg") String name,String URL)throws Exception {
+        return grpcClientService.sendMessage(name,URL);
     }
 }
